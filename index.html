@@ -1,30 +1,4 @@
 <!-- LINKEASY BY MATTHIAS CLAUDIUS REEF - V1.0 -->
-<?php
-/*
-GRAVATAR INTEGARAION
-CHANGE $email to your GRAVATAR E-Mail address so that youll always have an updated profile pictue.
-Sign Up for GRAVATAR here: http://gravatar.org/
-*/
-$email = "your@email.here";
-$default = "https://mcreef.de/src/user_placeholder.png";
-$size = 400;
-
-$grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
-
-function get_gravatar( $email, $s = 80, $d = 'mp', $r = 'g', $img = false, $atts = array() ) {
-    $url = 'https://www.gravatar.com/avatar/';
-    $url .= md5( strtolower( trim( $email ) ) );
-    $url .= "?s=$s&d=$d&r=$r";
-    if ( $img ) {
-        $url = '<img src="' . $url . '"';
-        foreach ( $atts as $key => $val )
-            $url .= ' ' . $key . '="' . $val . '"';
-        $url .= ' />';
-    }
-    return $url;
-}
-
-?>
 <html>
 
 <head>
