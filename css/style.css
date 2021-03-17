@@ -70,7 +70,7 @@ a {
 
 /* EDIT DESCRIPTION LINK COLOR */
 a:hover {
-    color: #a78a5e;
+    color: #f0b5cb;
 }
 
 .section {
@@ -110,7 +110,7 @@ a:hover {
 
 /* EDIT LINK UNDERLINE COLOR */
 .underline:hover {
-    border-bottom: 1px solid #a78a5e;
+    border-bottom: 1px solid #f0b5cb;
 }
 
 .preul {
@@ -135,7 +135,7 @@ a:hover {
 
 /* EDIT BUTTON BACKGROUND COLOR */
 .button {
-    background: #a78a5e;
+    background: #f0b5cb;
     opacity: .9;
     padding: 20px;
     margin: 10px auto;
